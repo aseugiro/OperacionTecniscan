@@ -1,0 +1,40 @@
+<div class="center">
+    <section id="content">
+        <h1 class="subheader">Formulario</h1>
+        <form class="mid-form" #operacionForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="operador1">Operador 1</label>
+                <input type="number" name="operador1" #operador1="ngModel" [(ngModel)]="formulario.operador1" required pattern="-?[0-9]+" />
+                <small *ngIf="!operador1.valid && operador1.touched">
+                    El operador no es válido
+                </small>
+            </div>
+
+            <div class="form-group">
+                <label for="operador2">Operador 2</label>
+                <input type="number" name="operador2" #operador2="ngModel" [(ngModel)]="formulario.operador2" required pattern="-?[0-9]+" />
+                <small *ngIf="!operador2.valid && operador2.touched">
+                    El operador no es válido
+                </small>
+            </div>
+
+            <div class="form-group radibuttons">
+                <input type="radio" name="operacion" value="sum" #operacion="ngModel" [(ngModel)]="formulario.operacion" required="true" /> Suma
+                <input type="radio" name="operacion" value="subtract" #operacion="ngModel" [(ngModel)]="formulario.operacion" /> Resta
+                <input type="radio" name="operacion" value="multiply" #operacion="ngModel" [(ngModel)]="formulario.operacion" />
+                Multiplicación
+                <input type="radio" name="operacion" value="divide" #operacion="ngModel" [(ngModel)]="formulario.operacion" /> División
+                <small *ngIf="!operacion.valid && operacion.touched">
+                    El tipo de operacion es requerida
+                </small>
+            </div>
+
+          
+            <input type="submit" value="Enviar"  class="btn btn-success center" [disabled]="operacionForm.invalid" />
+
+            <div id="resultado" *ngIf="formulario.resultado">
+                <h1> El resultado es : {{formulario.resultado}}</h1>
+            </div>
+        </form>
+    </section>
+</div>

@@ -1,27 +1,37 @@
-# Calculadora
+#   Calculadora
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Operaciones de suma, resta, multiplicación y división
 
-## Development server
+## Requisitos Previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de ejecutar esta aplicación, asegúrate de tener instalados los siguientes programas:
 
-## Code scaffolding
+* **Node.js:** Versión 18.20.7 o superior. (https://nodejs.org/). Se recomienda instalar la versión LTS (Long-Term Support).
+* **npm (Node Package Manager):** Generalmente se instala automáticamente con Node.js. Puedes verificar tu versión con el comando `npm -v` en la terminal.
+* **Angular CLI (Command Line Interface):** Versión 13.3.11. Puedes instalarlo globalmente con el siguiente comando:
+    ```bash
+    npm install -g @angular/cli@13.3.11
+    ```
+    Puedes verificar tu versión con el comando `ng version`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+1.  **Clonar el repositorio (si aplica):**
+    ```bash
+    git clone https://github.com/aseugiro/ApiOperacion
+    cd nombre-de-tu-aplicacion
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2.  **Instalar las dependencias:**
+    Navega al directorio raíz de tu proyecto (donde se encuentra el archivo `package.json`) y ejecuta el siguiente comando:
+    ```bash
+    npm install
+    ```
+    Este comando descargará e instalará todas las dependencias necesarias listadas en el archivo `package.json`.
 
-## Running unit tests
+## Desarrollo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para ejecutar la aplicación en modo de desarrollo con recarga automática, utiliza el siguiente comando:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+ng serve -o
