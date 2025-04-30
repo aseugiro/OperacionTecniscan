@@ -18,7 +18,7 @@ Antes de ejecutar esta aplicación, asegúrate de tener instalados los siguiente
 
 1.  **Clonar el repositorio (si aplica):**
     ```bash
-    git clone https://github.com/aseugiro/ApiOperacion
+    git clone https://github.com/aseugiro/OperacionTecniscan
     cd nombre-de-tu-aplicacion
     ```
 
